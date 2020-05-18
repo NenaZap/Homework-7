@@ -1,0 +1,48 @@
+import random
+import turtle
+import time
+score_list= [['Mets',10,5,5], ['Yankees',11,2,2], ['Bears',7,15,0], ['Senators',5,30,1], ['Clowns',10,50,1]]
+
+#question one
+def team_score(teams):
+    total_number_of_games = wins + losses + ties
+    team_name,wins,losses,ties = teams
+    score = (wins+1/2*ties)/total_number_of_games
+    return(score)
+    score.reverse()
+    print('Updated List,' score)
+
+
+
+#question two
+def second_question():
+
+    list_1 = [[-200,200],[-200,90],[-50,-20]]
+    list_2 = [[50,200],[50,170],[300,90],[50,30],[50,0],[50,-13],[50,-73]]
+
+
+
+#question three
+list1 = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K','A',2,3,4,5,6,7,8,9,10,'J','Q','K','A',2,3,4,5,6,7,8,9,10,'J','Q','K','A',2,3,4,5,6,7,8,9,10,'J','Q','K']
+value_of_dealer = 0
+value_of_player = 0
+def card_value(list1,curr_value):
+  Ind = random.randint(0, len(list1))
+  card_down = list1[Ind]
+  list1.pop(Ind)
+  if card_down == 'A':
+      if curr_value + 22:
+            return(1)
+      else:
+            return(11)
+  elif card_down == 'J' or card_down == 'Q' or card_down == 'K':
+      return(10)
+  else:
+      return(card_down)
+        
+
+
+    
+    
+
+    
